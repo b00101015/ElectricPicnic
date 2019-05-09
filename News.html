@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>News</title>
+<link href="css/Style.css" rel="stylesheet" type="text/css">
+<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
+<script>var __adobewebfontsappname__="dreamweaver"</script>
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+	</script>
+	<!--[if lt IE 9]>
+   <script>
+      document.createElement('header');
+      document.createElement('nav');
+      document.createElement('section');
+      document.createElement('footer');
+   </script>
+<![endif]-->
+</head>
+
+<body>
+	<!--header-->
+	<header>
+	<div id="logo">
+		<img src="#" alt="logo">
+		</div>
+	
+						<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#topFixedNavbar1" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+      <a class="navbar-brand" href="#">Electric Picnic |</a></div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="topFixedNavbar1">
+      <ul class="nav navbar-nav navlist">
+    <li class="navlistitem"><a href="index.html">Home</a> </li>
+    <li class="navlistitem "><a href="Lineup1.html">Lineup</a> </li>
+    <li class="navlistitem"><a href="Tickets.html">Tickets</a> </li>
+    <li class="navlistitem"><a href="Information.html">Information</a></li>
+    <li class="navlistitem"><a href="Arenas.html">Arena</a></li>
+	<li class="navlistitem active"><a href="News.html">News</a></li>
+	<li class="navlistitem"><a href="Gallery.html">Gallery</a></li>
+    <li class="navlistitem"><a href="History.html">History</a></li>    
+		  <li class="navlistitem logonav"><img src="Images/logo1.png" alt="logo"></li>
+		</ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav>
+		
+	</header>
+	<!--/header-->
+
+	<div class="maintwo">
+	<!--full width column -->
+<section class="row">
+    <h1>Electric Picnic News</h1>
+    <p class="localpara"> Weekly updates of Irelands best music festival.</p>
+    
+    <!-- col left -->
+    <section class="column"> 
+		
+	<!-- Trigger the Modal -->
+<img id="myImg" src="Images/update.jpg" alt="UPDATE" style="width:100%;max-width:400px">
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <!-- The Close Button -->
+  <span class="close">&times;</span>
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01" alt="img01">
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+</div>
+		<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+		<br>
+		<br>
+		<br>
+		<!--first artists-->	
+		<img id="modaltwo" src="Images/art.jpg" alt="Art Trials Now Open" style="width:100%;max-width:300px">
+
+<!-- The Modal -->
+<div id="modalthree" class="modalfour">
+  <span class="closeone">&times;</span>
+  <img class="modal-contentone" id="modalimage" alt="modalimg">
+  <div id="captionone"></div>
+</div>
+	<script>
+// Get the modal
+var modal = document.getElementById('modalthree');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('modaltwo');
+var modalImg = document.getElementById("modalimage");
+var captionText = document.getElementById("captionone");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("closeone")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+		<br>
+		<br>
+		<br>
+		<!--blanchbuilding-->
+		<img id="thirdimage" src="Images/kaleidoscope_ep_600x320_rgb_1.jpg" alt="KALEIDOSCOPE" style="width:100%;max-width:300px">
+
+<!-- The Modal -->
+<div id="imagefour" class="imagefive">
+  <span class="closetwo">&times;</span>
+  <img class="modal-contenttwo" id="modalimageone">
+  <div id="captiontwo"></div>
+</div>
+
+	<script>
+// Get the modal
+var modal = document.getElementById('imagefour');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('thirdimage');
+var modalImg = document.getElementById("modalimageone");
+var captionText = document.getElementById("captiontwo");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("closetwo")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>	
+			
+	</section>
+    <!-- col left -->
+	
+	 <!-- col right -->
+	<section class="columnhistory">
+        <h3>Ticket Update!</h3>
+		<p>This is your last chance to get tickets at the current VAT rate and <strong>the last batch of tickets going on sale for Electric Picnic 2019</strong> so don’t miss out!</p>
+				<form>
+	<fieldset id="fieldset2">
+	<label class="locker responsive"><a href="Tickets.html">Click Here to grab yours!</a></label>
+		</fieldset>
+	</form>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<h3>Art Trial Applications Now Open</h3>
+		<p>As Ireland’s most eclectic Music &amp; Arts Festival, Electric Picnic wouldn’t be complete without it’s Art Trail - Think you've got what it takes? Applications are now open for brand new art installations and other fantastic creations to be exhibited at this year's festival.  </p>
+		<form>
+	<fieldset id="fieldset1">
+	<label class="locker responsive"><a href="https://www.electricpicnic.ie/artist-applications">APPLY HERE</a></label>
+		</fieldset>
+	</form>
+		<br>
+		<br>
+		<br>
+		<h3>Introducing Kaleidoscope</h3>
+		<p>Many of you will have noticed the announcement of a new festival we have launched called Kaleidoscope. The team we are working with are to provide the kids area at Little Picnic this year and going forward and we are very excited about it.</p>
+		<p>For full deatils about the Kaleidoscope loyalty offer, and to find out how to register, click the link below!</p>
+		<form>
+	<fieldset id="fieldset2">
+	<label class="locker responsive"><a href="https://www.kaleidoscopefestival.ie/loyalty-scheme">APPLY HERE</a></label>
+		</fieldset>
+	</form>
+		<br>
+		
+		</section>
+    <!-- / col right -->
+</section>
+<!-- /full width column -->
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</div>
+	
+	
+	
+	
+	
+
+</body>
+	<!-- footer -->
+<footer>
+    <ul>
+        <li class="twitter"><a href="https://twitter.com/EPfestival"><img src="Images/twitter_logo.png" alt="Twitter"/></a></li>
+        <li class="facebook"><a href="https://twitter.com/EPfestival"><img src="Images/facebook_logo.png" alt="Facebook"/></a></li>
+		<li>Copyright© Niamh Smith</li>
+    </ul>
+</footer>
+<!-- /footer -->
+</html>

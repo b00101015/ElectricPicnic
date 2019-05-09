@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Lineup</title>
+<link href="css/Style.css" rel="stylesheet" type="text/css">
+<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
+<script>var __adobewebfontsappname__="dreamweaver"</script>
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+	</script>
+	<!--[if lt IE 9]>
+   <script>
+      document.createElement('header');
+      document.createElement('nav');
+      document.createElement('section');
+      document.createElement('footer');
+   </script>
+<![endif]-->
+</head>
+
+<body>
+	<!--header-->
+	<header>
+	<div id="logo">
+		<img src="#" alt="logo">
+		</div>
+	
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#topFixedNavbar1" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+      <a class="navbar-brand" href="#">Electric Picnic |</a></div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="topFixedNavbar1">
+      <ul class="nav navbar-nav navlist">
+    <li class="navlistitem"><a href="index.html">Home</a> </li>
+    <li class="navlistitem active"><a href="Lineup1.html">Lineup</a> </li>
+    <li class="navlistitem"><a href="Tickets.html">Tickets</a> </li>
+    <li class="navlistitem"><a href="Information.html">Information</a></li>
+    <li class="navlistitem"><a href="Arenas.html">Arena</a></li>
+	<li class="navlistitem"><a href="News.html">News</a></li>
+	<li class="navlistitem"><a href="Gallery.html">Gallery</a></li>
+    <li class="navlistitem"><a href="History.html">History</a></li> 
+		  <li class="navlistitem logonav"><img src="Images/logo1.png" alt="logo"></li>
+		</ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav>
+		
+	</header>
+	<!--/header-->
+	<section class="column">
+		<h1 class="lineuph1"> Electric Picnic Lineup 2019</h1>
+		
+		<img src="Images/eplineupmaster.jpg" alt="master lineup" class="responsivelineup masterline">
+		
+    </section>
+		
+		
+		
+</body>
+	<!-- footer -->
+<footer>
+    <ul>
+        <li class="twitter"><a href="https://twitter.com/EPfestival"><img src="Images/twitter_logo.png" alt="Twitter"/></a></li>
+        <li class="facebook"><a href="https://twitter.com/EPfestival"><img src="Images/facebook_logo.png" alt="Facebook"/></a></li>
+		<li>Copyright© Niamh Smith</li>
+    </ul>
+</footer>
+<!-- /footer -->
+</html>

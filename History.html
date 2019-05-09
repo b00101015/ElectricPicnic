@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>History</title>
+<link href="css/Style.css" rel="stylesheet" type="text/css">
+<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
+<script>var __adobewebfontsappname__="dreamweaver"</script>
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+	</script>
+	<!--[if lt IE 9]>
+   <script>
+      document.createElement('header');
+      document.createElement('nav');
+      document.createElement('section');
+      document.createElement('footer');
+   </script>
+<![endif]-->
+</head>
+
+<body>
+	<!--header-->
+	<header>
+	<div id="logo">
+		<img src="#"  alt="logo">
+		</div>
+	
+			<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#topFixedNavbar1" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+      <a class="navbar-brand" href="#">Electric Picnic |</a></div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="topFixedNavbar1">
+      <ul class="nav navbar-nav navlist">
+    <li class="navlistitem"><a href="index.html">Home</a> </li>
+    <li class="navlistitem "><a href="Lineup1.html">Lineup</a> </li>
+    <li class="navlistitem"><a href="Tickets.html">Tickets</a> </li>
+    <li class="navlistitem"><a href="Information.html">Information</a></li>
+    <li class="navlistitem"><a href="Arenas.html">Arena</a></li>
+	<li class="navlistitem"><a href="News.html">News</a></li>
+	<li class="navlistitem"><a href="Gallery.html">Gallery</a></li>
+    <li class="navlistitem active"><a href="History.html">History</a></li>  
+		  <li class="navlistitem logonav"><img src="Images/logo1.png" alt="logo"></li>
+		</ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav>	
+		
+	</header>
+	<!--/header-->
+
+<!--full width column -->
+<section class="row">
+    <h1>The History of Electric Picnic </h1>
+    <p class="localpara"> From the very start, very first artist to now.</p>
+    
+    <!-- col left -->
+    <section class="column"> 
+		
+	<!-- Trigger the Modal -->
+<img id="myImg" src="Images/ep2005_thumbnail.jpg" alt="EP 2004" style="width:100%;max-width:300px">
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <!-- The Close Button -->
+  <span class="close">&times;</span>
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01" alt="img01">
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+</div>
+		<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+		<br>
+		<br>
+		<!--first artists-->	
+		<img id="modaltwo" src="Images/2006_basement_jaxx.jpg" alt="First few artists" style="width:100%;max-width:300px">
+
+<!-- The Modal -->
+<div id="modalthree" class="modalfour">
+  <span class="closeone">&times;</span>
+  <img class="modal-contentone" id="modalimage" alt="modalimg">
+  <div id="captionone"></div>
+</div>
+	<script>
+// Get the modal
+var modal = document.getElementById('modalthree');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('modaltwo');
+var modalImg = document.getElementById("modalimage");
+var captionText = document.getElementById("captionone");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("closeone")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+		<br>
+		<br>
+		<!--blanchbuilding-->
+		<img id="thirdimage" src="Images/pinkstage.jpg" alt="Electric picnic 2018" style="width:100%;max-width:300px">
+
+<!-- The Modal -->
+<div id="imagefour" class="imagefive">
+  <span class="closetwo">&times;</span>
+  <img class="modal-contenttwo" id="modalimageone">
+  <div id="captiontwo"></div>
+</div>
+
+	<script>
+// Get the modal
+var modal = document.getElementById('imagefour');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('thirdimage');
+var modalImg = document.getElementById("modalimageone");
+var captionText = document.getElementById("captiontwo");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("closetwo")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>	
+			
+	</section>
+    <!-- col left -->
+	
+	 <!-- col right -->
+	<section class="columnhistory">
+        <h3>Electric Picnic 2004</h3>
+        <p>Electric Picnic 2004 was the year it all started. It started as one day event for 10,000 people on a gloriously sunny September Saturday. It was a first for Ireland and destined to keep going for a very long time. 
+			<br>
+			<br>The following year it became a weekend camping event.Nobody quite new what to expect but with a line-up including Groove Armada, 2 Many DJ’s, Super Furry Animals, Mylo and Soulwax, comedy and theatre, great food Electric Picnic started off with a bang.  
+			<br>
+			<br> The festival was christened ‘The festival of good intentions’, with its laid back attitude and nothing else in the country to rival it, it is no wonder that Electric Picnic became firmly entrenched as a must go to event in the Festival calendar.</p>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<h3>The very first few Artists</h3>
+		<p>Within the first 3 years of the festival, it had hosted artists such as  Fatboy Slim, Arcade Fire, Damien Dempsey, Yeah Yeah Yeahs, DJ Shadow and Massive Attack.</p>
+		<p>Throughout the years Electric Picnic have continued to gain attraction and played host to many of the most famous artists in the world.</p>
+		<p> In 2016, The Main Stage was brought to a close on Sunday night by Lana Del Rey and New Order. Lana's haunting vocals mesmerised the masses with her dreamy pop anthems, while New Order brought us back in time with songs such as 'Blue Monday' and 'Bizzare Love Triangle'. </p>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<h3>Electric Picnic Today</h3>
+		<p>In 2018, 50,000 tickets were sold for the weekend festival. Electric picnic has only grown in size and popularity with artists such as Kendrick Lamar, N.E.R.D and Dua lipa having headlined for the weekend.</p>
+		<p>In 2019, Electric Picnic will have expanded to 57,000 tickets on over 600 acres of land. It will be headlined by THE1975, Hozier, Billie Eilish and The Strokes. </p>
+		<br>
+		
+		</section>
+    <!-- / col right -->
+</section>
+<!-- /full width column -->
+	
+</body>
+	<!-- footer -->
+<footer>
+    <ul>
+        <li class="twitter"><a href="https://twitter.com/EPfestival"><img src="Images/twitter_logo.png" alt="Twitter"/></a></li>
+        <li class="facebook"><a href="https://twitter.com/EPfestival"><img src="Images/facebook_logo.png" alt="Facebook"/></a></li>
+		<li>Copyright© Niamh Smith</li>
+    </ul>
+</footer>
+<!-- /footer -->
+
+
+</html>

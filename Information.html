@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Information</title>
+<link href="css/Style.css" rel="stylesheet" type="text/css">
+<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<script>var __adobewebfontsappname__="dreamweaver"</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script src="Js/jquery-1.11.3.min.js"></script>
+		<script src="Js/bootstrap.js"></script>
+		<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+	</script>
+	<!--[if lt IE 9]>
+   <script>
+      document.createElement('header');
+      document.createElement('nav');
+      document.createElement('section');
+      document.createElement('footer');
+   </script>
+<![endif]-->
+</head>
+
+<body>
+	<!--header-->
+	<header>
+	<div id="logo">
+		<img src="#" alt="logo">
+		</div>
+	
+	  <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#topFixedNavbar1" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+      <a class="navbar-brand" href="Home.html">Electric Picnic |</a></div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="topFixedNavbar1">
+      <ul class="nav navbar-nav navlist">
+    <li class="navlistitem "><a href="index.html">Home</a> </li>
+    <li class="navlistitem "><a href="Lineup1.html">Lineup</a> </li>
+    <li class="navlistitem"><a href="Tickets.html">Tickets</a> </li>
+    <li class="navlistitem active"><a href="Information.html">Information</a></li>
+    <li class="navlistitem"><a href="Arenas.html">Arena</a></li>
+	<li class="navlistitem"><a href="News.html">News</a></li>
+	<li class="navlistitem"><a href="Gallery.html">Gallery</a></li>
+    <li class="navlistitem"><a href="History.html">History</a></li>
+		  <li class="navlistitem logonav"><img src="Images/logo1.png" alt="logo"></li>
+		</ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav>
+		
+	  <div class="sidenav">
+   <a href="Contact.html">Contact</a>
+  <a href="Campsite.html">Campsite</a>
+  <a href="Events.html">Events</a>
+ 
+</div>
+		
+		
+	</header>
+	<!--/header-->
+
+<div class="main">
+  <h1>The Electric Picnic Essentials</h1>
+    <img src="Images/what2.jpg" class="responsive" alt="banner">
+	<h3>ELECTRIC PICNIC TAKES PLACE FROM FRIDAY 30TH AUGUST - SUNDAY 1ST SEPTEMBER 2019</h3>
+
+    <h2>Age Policy</h2>
+	<p>You must be aged 18 years or over to attend Electric Picnic Music and Arts Festival, with the exception of children aged 12 and under. As in previous years, 13-17 year olds are not permitted to attend the event even when accompanied by an adult. It is not acceptable to turn up to the festival with children aged between 13-17 and anyone who is of this age will not gain admission to the festival.</p>
+	<p>Children aged 12 years and under must be accompanied by a ticket holding adult throughout the weekend, limited to a maximum of two children per adult.  Children aged 12 years and under do not require a ticket but they must be registered before arriving at the festival.</p>
+
+	<h2>Ticket Enquiries</h2>
+	<p>For any questions regarding your tickets, please contact <b>Ticketmaster</b> on the following numbers Republic of Ireland: <b>0818 903001</b>, Northern Ireland &amp; UK: <b>0333 321 9996</b> and International Customers <b>00 353 818 903001</b>.</p>
+
+	<h2>ID</h2>
+	<p>We have a Challenge 25 Policy on site and the following are accepted as ID for the bars and cigarettes.</p>
+<p>The accepted forms of ID are</p>
+<ul>
+
+<li>Passport</li>
+<li>Drivers Licence</li>
+<li>Garda Age Cards</li>
+</ul>
+	<p>Please note that ID checks will also be in place on entry to the festival. If you are bringing your child and feel they look older than 12 years old please bring ID to back this up (colour photocopies will suffice). </p>
+	
+	<h2>What you can and cannot bring</h2>
+	<b>What you can bring - </b>
+	<ul>
+	<li>Cigarettes</li>
+	<li>Disposable Barbeques</li>
+	<li>Empty Plastic Bottles</li>
+	<li>Flags</li>
+	<li>Food</li>
+	</ul>
+	<br>
+	<b>What you cannot bring -</b>
+	<ul>
+	<li>Animals (unless registered guide/hearing dogs)</li>
+	<li>Drones</li>
+	<li>Glass items</li>
+	<li>Weapons (knives etc)</li>
+	</ul>
+	</div>
+	
+</body>
+	<!-- footer -->
+<footer>
+    <ul>
+        <li class="twitter"><a href="https://twitter.com/EPfestival"><img src="Images/twitter_logo.png" alt="Twitter"/></a></li>
+        <li class="facebook"><a href="https://twitter.com/EPfestival"><img src="Images/facebook_logo.png" alt="Facebook"/></a></li>
+		<li>Copyright© Niamh Smith</li>
+    </ul>
+</footer>
+<!-- /footer -->
+</html>

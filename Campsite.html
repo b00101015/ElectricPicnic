@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Campsite</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+	</script>
+	<!--[if lt IE 9]>
+   <script>
+      document.createElement('header');
+      document.createElement('nav');
+      document.createElement('section');
+      document.createElement('footer');
+   </script>
+<![endif]-->
+<link href="css/Style.css" rel="stylesheet" type="text/css">
+<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
+<script>var __adobewebfontsappname__="dreamweaver"</script>
+
+
+</head>
+
+<body>
+	<!--header-->
+	<header>
+	<div id="logo">
+		<img src="#" alt="logo">
+		</div>
+	
+			<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#topFixedNavbar1" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+      <a class="navbar-brand" href="#">Electric Picnic |</a></div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="topFixedNavbar1">
+      <ul class="nav navbar-nav navlist">
+    <li class="navlistitem "><a href="index.html">Home</a> </li>
+    <li class="navlistitem "><a href="Lineup1.html">Lineup</a> </li>
+    <li class="navlistitem"><a href="Tickets.html">Tickets</a> </li>
+    <li class="navlistitem active"><a href="Information.html">Information</a></li>
+    <li class="navlistitem"><a href="Arenas.html">Arena</a></li>
+	<li class="navlistitem"><a href="News.html">News</a></li>
+	<li class="navlistitem"><a href="Gallery.html">Gallery</a></li>
+    <li class="navlistitem"><a href="History.html">History</a></li> 
+		  <li class="navlistitem logonav"><img src="Images/logo1.png" alt="logo"></li>
+		</ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav>
+	
+	<div class="sidenav">
+ <a href="Contact.html">Contact</a>
+  <a href="Campsite.html">Campsite</a>
+  <a href="Events.html">Events</a>
+ 
+</div>
+
+	</header>
+	<!--/header-->
+<div class="main">
+	<img src="Images/campsite.jpg" alt="campsite" class="responsive">
+	<h2>Campsite Information</h2>
+	
+	<h3>Lockers</h3>
+	<p>Lockers and Storage Boxes will be available for storing your valuables all weekend in the Jimi Hendrix campsite. We recommend valuables such as cash, wallets, IDs, cameras etc are kept in lockers for extra security. Storage boxes are perfect for storing larger items such as alcohol etc. If it fits in either, they'll will store it!</p>
+	<br>
+	<p>Book your locker in advance to avoid disappointment.</p>
+	<form>
+	<fieldset id="fieldset1">
+	<label class="locker responsive"><a href="https://www.ticketweb.ie/event/giglocker-electric-picnic-stradbally-hall-tickets/9289945?pl=GIG&edpPlParam=%3Fpl%3DGIG&_ga=2.203243794.2082517388.1557425862-1348292050.1553447034" class="booklocker"> Book Your Locker Now!</a></label>
+		</fieldset>
+	</form>
+	
+	<h3>Campsite Opening And Closing Times</h3>
+
+	<ul>
+	<li>Entry for Early Entry Ticket Holders is from 4pm on Thursday, 29th August 2019 until 1pm Monday, 2nd September 2019.</li>
+	<li>General Campervan and Family Campervan site will open at 4pm on Thursday, 29th August 2018 and will close at 1pm Monday, 2nd September 2019.</li>
+	<li>General Campsite and Family Campsite will open at 9am Friday, 29th August 2019 and will close at 1pm Monday, 2nd September 2019.</li>
+	</ul>
+	<strong>Sunday ticket holders can enter from 11am Sunday (there is no camping permitted for Sunday Day Ticket holders).</strong>
+	
+	<h3>Emergency Access Lanes</h3>
+	<strong>If you are camped in an emergency access lane, your tent will have to be moved by our security teams. The lanes are marked with scaffolding poles and festoon lighting. The lanes between the scaffolding poles are the emergency access lanes.</strong>
+	<p>If you return to your tent to find that this has occurred, please make a note of the campsite that you are in and find the nearest member of staff to help or go to your campsite info point.</p>
+	<p>If you find yourself without accommodation due to your tent being removed then please go to the Welfare Tent in Jimi Hendrix which is open 24 hours. They will be happy to help you. Please note that although we will make all reasonable efforts to take care of your property, no responsibility can be taken for any items that are lost or damaged during tent removal. </p>
+	
+	<h3>What is Allowed and Not Allowed</h3>
+	<p>The Stoves and BBQs that are allowed - </p>
+	<ul>
+	<li>Solid Fuel Stoves</li>
+	<li>Greenheat Base Camp Cooker</li>
+	<li>Disposable BBQs</li>
+	<li>Methylated / "Trangia" Spirit Stoves</li>
+	<li>Greenheat Base Camp Cooker</li>
+	</ul>
+	<br>
+	<p>What you cannot bring -</p>
+	<ul>
+	<li>Gas canisters (any size) [this includes nitrous oxide, or similar, capsules]</li>
+	<li>Any form of aerosol 250ml</li>
+	<li>Petrol burner</li>
+	</ul>
+	
+	
+	</div>
+</body>
+	<!-- footer -->
+<footer>
+    <ul>
+        <li class="twitter"><a href="https://twitter.com/EPfestival"><img src="Images/twitter_logo.png" alt="Twitter"/></a></li>
+        <li class="facebook"><a href="https://twitter.com/EPfestival"><img src="Images/facebook_logo.png" alt="Facebook"/></a></li>
+		<li>Copyright© Niamh Smith</li>
+    </ul>
+</footer>
+<!-- /footer -->
+</html>
